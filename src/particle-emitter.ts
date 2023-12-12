@@ -13,8 +13,8 @@ export default class ParticleEmitter<
     constructor(
         private readonly pool: ReusablePool<ParticleType>,
         private readonly options: ParticleOptionsType,
-        private readonly optionsUpdater: (options: ParticleOptions, parameters: ParametersType) => void,
-        private readonly isVisible: (options: ParticleOptions) => boolean,
+        private readonly optionsUpdater: (options: ParticleOptionsType, parameters: ParametersType) => void,
+        private readonly isVisible: (options: ParticleOptionsType) => boolean,
         private readonly activePool: Set<Particle<ParticleViewType, ParticleOptionsType>>,
     ) {
     }

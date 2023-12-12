@@ -1,11 +1,15 @@
 {
-    "name": "egd-client-particles",
-    "version": "0.0.0",
+    "name": "@remvst/particles",
+    "version": "1.0.0",
     "description": "",
-    "private": true,
     "keywords": [],
     "author": "Rémi Vansteelandt",
-    "license": "",
+    "license": "UNLICENSED",
+    "main": "lib/index.js",
+    "scripts": {
+      "build": "rm -rf lib && tsc",
+      "prepublishOnly": "npm i && npm run build"
+    },
     "dependencies": {
         "@remvst/animate.js": "^2.0.0",
         "@remvst/optimization": "^1.0.1",

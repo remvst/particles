@@ -7,7 +7,7 @@ export interface ParticleOptions {
 }
 
 export class ParticleOptions2D implements ParticleOptions {
-    layerId: string = null;
+    layerId: string;
 
     x: number;
     deltaX: number;
@@ -35,7 +35,7 @@ export class ParticleOptions2D implements ParticleOptions {
     }
 
     resetToDefault() {
-        this.layerId = null;
+        this.layerId = '';
 
         this.x = 0;
         this.deltaX = 0;

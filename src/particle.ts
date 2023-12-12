@@ -18,7 +18,7 @@ export default abstract class Particle<ViewType, OptionType extends ParticleOpti
         }
         return this.view;
     }
-    
+
     protected abstract get options(): OptionType;
 
     abstract install(): void;
