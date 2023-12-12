@@ -1,0 +1,14 @@
+{
+    "name": "egd-client-particles",
+    "version": "0.0.0",
+    "description": "",
+    "private": true,
+    "keywords": [],
+    "author": "Rémi Vansteelandt",
+    "license": "",
+    "dependencies": {
+        "@remvst/animate.js": "^2.0.0",
+        "@remvst/optimization": "^1.0.1",
+        "typescript": "^5.2.2"
+    }
+}
