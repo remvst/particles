@@ -1,5 +1,5 @@
-import Particle from "./particle";
-import ParticleEmitterProvider from "./particle-emitter-provider";
+import { Particle } from "./particle";
+import { ParticleEmitterProvider } from "./particle-emitter-provider";
 import { ParticleOptions } from "./particle-options";
 
 export class ParticlesManager {

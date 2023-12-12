@@ -1,7 +1,7 @@
 import { ReusablePool, ReusablePoolBindable } from '@remvst/optimization';
 import { ParticleOptions } from './particle-options';
 
-export default abstract class Particle<ViewType, OptionType extends ParticleOptions> implements ReusablePoolBindable {
+export abstract class Particle<ViewType, OptionType extends ParticleOptions> implements ReusablePoolBindable {
 
     protected view: ViewType | null = null;
     protected currentTime: number = 0;
@@ -34,10 +34,13 @@ export default abstract class Particle<ViewType, OptionType extends ParticleOpti
 
     cycle(elapsed: number) {
         this.currentTime = Math.min(this.options.duration, this.currentTime + elapsed);
+        this.updateView(this.getOrCreateView());
     }
 
     setup(options: ParticleOptions) {
         this.options.copy(options);
         this.currentTime = 0;
     }
+
+    abstract updateView(view: ViewType): void;
 };

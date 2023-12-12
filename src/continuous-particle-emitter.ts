@@ -1,8 +1,8 @@
-import ParticleEmitter from './particle-emitter';
+import { ParticleEmitter } from './particle-emitter';
 
 const MIN_INTERVAL = 0.01;
 
-export default class ContinuousParticleEmitter<ParametersType> {
+export class ContinuousParticleEmitter<ParametersType> {
 
     private age: number = 0;
     private nextParticle: number = 0;

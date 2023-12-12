@@ -1,9 +1,9 @@
-import Particle from './particle';
-import ContinuousParticleEmitter from './continuous-particle-emitter';
+import { Particle } from './particle';
+import { ContinuousParticleEmitter } from './continuous-particle-emitter';
 import { ReusablePool } from '@remvst/optimization';
 import { ParticleOptions } from './particle-options';
 
-export default class ParticleEmitter<
+export class ParticleEmitter<
     ParticleType extends Particle<ParticleViewType, ParticleOptionsType>,
     ParametersType,
     ParticleViewType = any,

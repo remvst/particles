@@ -1,9 +1,9 @@
 import { ReusablePool } from '@remvst/optimization';
-import Particle from "./particle";
-import ParticleEmitter from "./particle-emitter";
+import { Particle } from "./particle";
+import { ParticleEmitter } from "./particle-emitter";
 import { ParticleOptions } from './particle-options';
 
-export default class ParticleEmitterProvider<
+export class ParticleEmitterProvider<
     ParticleType extends Particle<ParticleViewType, ParticleOptionsType>,
     ParticleViewType = any,
     ParticleOptionsType extends ParticleOptions = any,
