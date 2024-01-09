@@ -1,6 +1,6 @@
 {
     "name": "@remvst/particles",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "",
     "keywords": [],
     "author": "Rémi Vansteelandt",
@@ -11,7 +11,7 @@
       "prepublishOnly": "npm i && npm run build"
     },
     "dependencies": {
-        "@remvst/animate.js": "^2.0.0",
+        "@remvst/animate.js": "^3.0.0",
         "@remvst/optimization": "^1.0.1",
         "typescript": "^5.2.2"
     }
